@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/DepartmentDefinition.json",
+  "$id": "https://raw.githubusercontent.com/MikeRensing/HyparTest/master/DepartmentDefinition.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A department definition for space planning.",
   "title": "DepartmentDefinition",
