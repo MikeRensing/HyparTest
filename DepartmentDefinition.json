@@ -1,0 +1,55 @@
+{
+  "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/DepartmentDefinition.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A department definition for space planning.",
+  "title": "DepartmentDefinition",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [ { "$ref": "https://hypar.io/Schemas/Element.json" } ],
+  "required": [ "Department Name", "Department Area", "Minimum Width", "Maximum Width", "Minimum Depth", "Maximum Depth", "Department Height", "Department Color", "Adjacent Departments", "discriminator" ],
+  "discriminator": "discriminator",
+  "properties": {
+    "Department Name": {
+      "description": "Name of the department.",
+      "type": "string"
+    },
+    "Department Area": {
+      "description": "Desired area of the department.",
+      "type": "number"
+    },
+    "Minimum Width": {
+      "description": "Minimum desired width of the department",
+      "type": "number",
+      "unit_type": "length"
+    },
+    "Maximum Width": {
+      "description": "Maximum desired width of the department",
+      "type": "number",
+      "unit_type": "length"
+    },
+    "Minimum Depth": {
+      "description": "Minimum desired depth of the department",
+      "type": "number",
+      "unit_type": "length"
+    },
+    "Maximum Depth": {
+      "description": "Maximum desired depth of the department",
+      "type": "number",
+      "unit_type": "length"
+    },
+    "Department Height": {
+      "description": "Desired height of the department.",
+      "type": "number",
+      "unit_type": "length"
+    },
+    "Department Color": {
+      "description": "Color of department in R-G-B format.",
+      "type": "string"
+    },
+    "Adjacent Departments": {
+      "description": "List of adjacent departments.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
